@@ -1,0 +1,51 @@
+body {
+    background: url("../img/fotofundo.jpg") no-repeat top center fixed;
+
+    background-size: cover;
+}
+
+div{
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #212121;
+    width: 900px;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+}
+p{
+    color:#353b48;
+    font-family: "Arial";
+    font-style: normal;
+    font-size: 15px;
+    text-align: justify;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+h2{
+  text-align: center; 
+  font-family: helvetica, sans-serif;  
+}
+
+h3{
+    text-align: center;
+    font-family: helvetica, sans-serif;
+    
+}
+img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+width: 150px;
+height: auto;
+}
+.preencher{
+    border-radius: 8px;
+}
+.marg{
+margin-left: 3em;
+margin-right: 3em;  
+}
