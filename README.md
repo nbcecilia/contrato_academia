@@ -1,6 +1,6 @@
-# 🥋 TOKKA - Sistema de Cadastro e Contrato de Alunos
+# 🥋  Sistema de Cadastro e Contrato de Alunos
 
-Sistema desenvolvido para gerenciamento de cadastro de alunos e geração de contratos da escola de lutas TOKKA.
+Sistema desenvolvido para gerenciamento de cadastro de alunos e geração de contratos da escola de lutas.
 
 ## 📋 Sobre o Projeto
 
