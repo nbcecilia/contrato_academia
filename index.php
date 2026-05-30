@@ -7,9 +7,6 @@
 
     <link rel="stylesheet" href="css/estilo.css">
 
-    <style>
-
-    </style>
 </head>
 <body>
     <div>
@@ -32,13 +29,13 @@ Após a confirmação do cadastro, você receberá uma mensagem ou e-mail com as
 
         <h3>Dados do Contratante</h3><br>
         <label for="nome">Nome do Aluno:</label>
-        <input class="preencher" type="text" id="nome" name="nome" minlength="5" maxlength="30" size= "60 "required placeholder="Digite o nome completo"> <br><br>
+        <input class="preencher" type="text" id="nome" name="nome" minlength="5" maxlength="30" size= "60" required placeholder="Digite o nome completo"> <br><br>
 
         <label for="">Data de nascimento: </label>
         <input class="preencher" id="date" type="date" name="data" size="8"> <br> <br>
         
         <label for="responsavel">Nome do Responsável(se necessário):</label>
-        <input  class="preencher" type="text" id="responsavel" name="responsavel" minlength="5" maxlength="30" size= "55" required placeholder="Digite seu nome completo"> <br> <br>
+        <input  class="preencher" type="text" id="responsavel" name="responsavel" minlength="5" maxlength="30" size= "55" placeholder="Digite seu nome completo"> <br> <br>
 
         <label for="cpf">CPF:</label>
         <input class="preencher" type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
@@ -52,7 +49,7 @@ Após a confirmação do cadastro, você receberá uma mensagem ou e-mail com as
         <input class="preencher" type="email" id="email" name="email"  autocomplete="email" required placeholder="seuemail@exemplo.com">
 
         <label for="itel">Telefone:</label>
-        <input  class="preencher" type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(11)91234-5678"> <br><br>
+        <input  class="preencher" type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required> <br><br>
 
         <label for="logradouro">Endereço:</label>
         <input class="preencher" type="text" name="logradouro" id="logradouro"size="60"><br>
@@ -76,24 +73,26 @@ Após a confirmação do cadastro, você receberá uma mensagem ou e-mail com as
 
         <hr width="90%">
         <h3>Informações complementares:</h3>
-                <p>Há alguma informação médica relacionada ao aluno, que você gostaria 
-                 de informar?</p>
+                Há alguma informação médica relacionada ao aluno, que você gostaria 
+                 de informar?<br>
                 <input type="radio" name="infoMedica" value="sim">Sim
                 <input type="radio" name="infoMedica" value="não" checked>Não
                 <input class="preencher"  type="text" size="60" placeholder="Se sim, informe aqui">
-
-                <p>O aluno necessita de alguma adaptação especial?</p>
+<br>
+                O aluno necessita de alguma adaptação especial?<br>
                 <input type="radio" name="especial" value="sim">Sim
                 <input type="radio" name="especial" value="não" checked>Não
                 <input class="preencher" type="text" size="60" placeholder="Se sim, informe aqui">
-</form><br><br><br>
+<br><br><br>
 
-<textarea class="marg" cols="80" rows="10" readonly="true"> 
-    </textarea>Observações<br><br>
+<textarea class="marg" cols="80" rows="10"> 
+    Observações: 
+    </textarea><br><br>
 
-    <input  type="checkbox" id="ciente" name="ciente" required> Declaro queque as informações prestadas são verdadeiras.<br><br>
- 
-    <input class="marg" type="submit" value="Enviar">   
+    <input  type="checkbox" id="ciente" name="ciente" required> Declaro que as informações prestadas são verdadeiras.<br><br>
+   
+    <button type="submit">Enviar</button>
+    </form>
     </div>
 </body>
 </html>
