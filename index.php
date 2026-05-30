@@ -27,7 +27,7 @@ Após a confirmação do cadastro, você receberá uma mensagem ou e-mail com as
 </p> <br><br>
 
                 
-        <form  class="marg" action="" method="POST" target="_blank">
+        <form class="marg" action="cadastroconfirmado.php" method="POST" target="_blank">
         <h2 class="h2">TERMO DE ADESÃO</h2><br>
 
         <h3>Dados do Contratante</h3><br>
@@ -55,7 +55,7 @@ Após a confirmação do cadastro, você receberá uma mensagem ou e-mail com as
         <input  class="preencher" type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(11)91234-5678"> <br><br>
 
         <label for="logradouro">Endereço:</label>
-        <input class="preencher" type="text" name="logradouro" id="logradouro"size="60">
+        <input class="preencher" type="text" name="logradouro" id="logradouro"size="60"><br>
         <label for="cidade">Cidade:</label> 
         <input  class="preencher" type="text" id="cidade" name="cidade" required><br><br>
 
@@ -66,20 +66,12 @@ Após a confirmação do cadastro, você receberá uma mensagem ou e-mail com as
         <input type="radio" name="luta" value="Muay Thai">Muay Thai <br>
         <input type="radio" name="luta" value="Jiu-Jitsu">Jiu-Jitsu <br> <br>
      
-
-        <label for="plano">Selecione o Plano / Frequência:</label>
-    <select id="plano" name="plano" required>
-        <option value="" disabled selected>Escolha uma opção...</option>
-        <option value="2x-100">2x na semana - R$ 100,00</option>
-        <option value="3x-130">3x na semana - R$ 130,00</option>
-        <option value="5x-180">5x na semana - R$ 180,00</option> <br><br>
-    </select><br><br>
-        <label>Escolha o Plano / Frequência:</label>
-        <input class="preencher" type="radio" id="plano2x" name="plano_frequencia" value="2x-100" required>
-        <label for="plano2x">2x na semana — <strong>R$ 100,00</strong></label>
-        <input type="radio" id="plano3x" name="plano_frequencia" value="3x-130">
-        <label for="plano3x">3x na semana — <strong>R$ 130,00</strong></label>
-        <input type="radio" id="plano5x" name="plano_frequencia" value="5x-180">
+        <label>Escolha a frequência:</label><br>
+        <input class="preencher" type="radio" id="plano2x" name="plano" value="2x-100" required>
+        <label for="plano2x">2x na semana — <strong>R$ 100,00</strong></label><br>
+        <input type="radio" id="plano3x" name="plano" value="3x-130">
+        <label for="plano3x">3x na semana — <strong>R$ 130,00</strong></label><br>
+        <input type="radio" id="plano5x" name="plano" value="5x-180">
         <label for="plano5x">5x na semana — <strong>R$ 180,00</strong></label> <br><br><br>
 
         <hr width="90%">
@@ -97,9 +89,9 @@ Após a confirmação do cadastro, você receberá uma mensagem ou e-mail com as
 </form><br><br><br>
 
 <textarea class="marg" cols="80" rows="10" readonly="true"> 
-    </textarea> <br><br>
+    </textarea>Observações<br><br>
 
-    <input  type="checkbox" id="ciente" name="ciente" required> Declaro que li e estou ciente das condições acima, bem como que as informações prestadas são verdadeiras.<br><br>
+    <input  type="checkbox" id="ciente" name="ciente" required> Declaro queque as informações prestadas são verdadeiras.<br><br>
  
     <input class="marg" type="submit" value="Enviar">   
     </div>
