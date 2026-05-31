@@ -91,7 +91,7 @@ Após a confirmação do cadastro, você receberá uma mensagem ou e-mail com as
 
     <input  type="checkbox" id="ciente" name="ciente" required> Declaro que as informações prestadas são verdadeiras.<br><br>
    
-    <button type="submit">Enviar</button>
+    <button type="submit">Enviar</button><br>
     </form>
     </div>
 </body>
