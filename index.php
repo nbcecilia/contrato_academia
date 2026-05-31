@@ -51,8 +51,8 @@ Após a confirmação do cadastro, você receberá uma mensagem ou e-mail com as
         <label for="itel">Telefone:</label>
         <input  class="preencher" type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required> <br><br>
 
-        <label for="logradouro">Endereço:</label>
-        <input class="preencher" type="text" name="logradouro" id="logradouro"size="60"><br>
+        <label for="endereco">Endereço:</label>
+        <input class="preencher" type="text" name="endereco" id="endereco"size="60"><br>
         <label for="cidade">Cidade:</label> 
         <input  class="preencher" type="text" id="cidade" name="cidade" required><br><br>
 
