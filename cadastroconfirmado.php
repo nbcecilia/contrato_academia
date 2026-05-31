@@ -124,7 +124,7 @@
             <p class="p2" align="center">ASSINATURA CONTRATADO</p>
             <p>&nbsp;</p>
             <form>
-                <input type="button" value="IMPRIMIR" onClick="window.print()"/>
+                <input type="button" value="IMPRIMIR" onClick="window.print()"/><br>
             </form>
         </div>
     </body>
