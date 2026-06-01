@@ -11,46 +11,59 @@
     <body>
 
         <?php
+        $contratado = isset($_POST["contratado"]) ? $_POST["contratado"] : 0;
+        $cnpj = isset($_POST["cnpj"]) ? $_POST["cnpj"] : 0;
+        $tel2 = isset($_POST["tel2"]) ? $_POST["tel2"] : 0;
+        $logradouro2 = isset($_POST["logradouro2"]) ? $_POST["logradouro2"] : 0;
+        $cidade2 = isset($_POST["cidade2"]) ? $_POST["cidade2"] : 0;
+        $estado2= isset($_POST["estado2"]) ? $_POST["estado2"] : 0;
+        $instrutor = isset($_POST["instrutor"]) ? $_POST["instrutor"] : 0;
         $nome = isset($_POST["nome"]) ? $_POST["nome"] : 0;
         $data = isset($_POST["data"]) ? $_POST["data"] : 0;
         $responsavel = isset($_POST["responsavel"]) ? $_POST["responsavel"] : 0;
         $cpf = isset($_POST["cpf"]) ? $_POST["cpf"] : 0;
+        $cpf2 = isset($_POST["cpf2"]) ? $_POST["cpf2"] : 0;
         $sexo = isset($_POST["sexo"]) ? $_POST["sexo"] : 0;
         $email = isset($_POST["email"]) ? $_POST["email"] : 0;
         $tel = isset($_POST["tel"]) ? $_POST["tel"] : 0;
         $endereco= isset($_POST["endereco"]) ? $_POST["endereco"] : 0;
         $cidade = isset($_POST["cidade"]) ? $_POST["cidade"] : 0;
+        $estado= isset($_POST["estado"]) ? $_POST["estado"] : 0;
         $luta = isset($_POST["luta"]) ? $_POST["luta"] : 0;
         $plano = isset($_POST["plano"]) ? $_POST["plano"] : 0;
         $infoMedica = isset($_POST["infoMedica"]) ? $_POST["infoMedica"] : 0;
         $especial = isset($_POST["especial"]) ? $_POST["especial"] : 0;
+        $obs = isset($_POST["obs"]) ? $_POST["obs"] : 0;
         ?>
 
         <div>
             <h2 class="h2" align="center">Contrato de Prestação de Serviços de Aulas de Artes Marciais</h2><br>
 
             <table align="center">
-                <td><img src="img/logo-min.jpg" alt="logo"/></td>
+                <td><img src="img/logo_remove.png" alt="logo"/></td>
             </table>
 
             <hr width="90%" />
 
-            <p>Dados Contratante:</p>
-            <p>Nome: <font><?php echo $nome ?></font></p>  
-            <p>Sexo:<font><?php echo $sexo ?></font></p>
-            <p>Nome do Responsável: <font><?php echo $responsavel ?></font></p>
+            <p>Dados Aluno/Contratante:</p>
+            <p>Nome do aluno(a): <font><?php echo $nome ?></font></p>
+            <p>CPF: <font><?php echo $cpf ?></font></p>
             <p>Data de nascimento: <font><?php echo $data ?></font></p>
-            <p>CPF: <font><?php echo $cpf ?></font> 
+            <p>Sexo:<font><?php echo $sexo ?></font></p> 
+            <p>Nome do Responsável: <font><?php echo $responsavel ?></font></p>
+            <p>CPF do Responsável: <font><?php echo $cpf2 ?></font></p>
             <p>E-mail: <font><?php echo $email ?></font><br>
             
             <hr width="90%" />
 
-            <p>Modalidade e frequência:</p>
             <p>Modalidade:<font><?php echo $luta?></font></p>
             <p>Frequência:<font><?php echo $plano?></font></p>
 
             <hr width="90%" />
 
+            <p>Endereço:</p>
+            <p>Logradouro:<font><?php echo $logradouro ?></font></p>
+            <p>Cidade:<font><?php echo $cidade?></font>/<font><?php echo $estado?></font></p>
             <p>Endereço:<font><?php echo $endereco ?></font></p>
             <p>Cidade:<font><?php echo $cidade?></font></p>
             <p>Telefone: <font><?php echo $tel ?></font></p>
@@ -60,8 +73,18 @@
 
             <p>Há alguma informação médica relacionada ao estudante, que você gostaria que a escola estivesse ciente? <font><?php echo $infoMedica?></font></p>
             <p>O aluno necessita de alguma adaptação especial? <font><?php echo $especial?></font></p>
+            <p>Observações:<font><?php echo $obs?></font></p>
+
 
             <hr width="90%" />
+
+            <p>Dados do Contratado:</p>
+            <p>Contratado: <font><?php echo $contratado ?></font></p>
+            <p>CNPJ: <font><?php echo $cnpj ?></font></p>
+            <p>Endereço:<font><?php echo $logradouro2 ?></font></p>
+            <p>Cidade:<font><?php echo $cidade2?></font>/<font><?php echo $estado2?></font></p>
+            <p>Telefone: <font><?php echo $tel2 ?></font></p>
+            <p>Instrutor Responsável : <font><?php echo $instrutor ?></font></p>
 
             <p>Dados Contratado:</p>
             <p>Contratado: A TOKKA – Escola de Lutas  CNPJ: 66.790.246/0001-12</p>

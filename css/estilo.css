@@ -1,14 +1,19 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1a1a2e;
+    background: url("../img/plano_fundo.png") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #1a1a2e;
     color: #333;
     margin: 0;
     padding: 40px 20px;
     display: flex;
-    justify-content: center;
+    justify-content: center;*/
 }
 form {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.85); ;
     max-width: 800px;
     width: 100%;
     border-radius: 12px;
@@ -19,7 +24,7 @@ form {
 
 
 div{
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
     border-style: solid;
     border-color: #212121;
