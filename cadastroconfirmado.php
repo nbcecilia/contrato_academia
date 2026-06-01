@@ -26,7 +26,7 @@
         $sexo = isset($_POST["sexo"]) ? $_POST["sexo"] : 0;
         $email = isset($_POST["email"]) ? $_POST["email"] : 0;
         $tel = isset($_POST["tel"]) ? $_POST["tel"] : 0;
-        $logradouro = isset($_POST["logradouro"]) ? $_POST["logradouro"] : 0;
+        $endereco= isset($_POST["endereco"]) ? $_POST["endereco"] : 0;
         $cidade = isset($_POST["cidade"]) ? $_POST["cidade"] : 0;
         $estado= isset($_POST["estado"]) ? $_POST["estado"] : 0;
         $luta = isset($_POST["luta"]) ? $_POST["luta"] : 0;
@@ -64,8 +64,10 @@
             <p>Endereço:</p>
             <p>Logradouro:<font><?php echo $logradouro ?></font></p>
             <p>Cidade:<font><?php echo $cidade?></font>/<font><?php echo $estado?></font></p>
+            <p>Endereço:<font><?php echo $endereco ?></font></p>
+            <p>Cidade:<font><?php echo $cidade?></font></p>
             <p>Telefone: <font><?php echo $tel ?></font></p>
-            <p>E-mail: <font><?php echo $email ?></font></p>
+
 
             <hr width="90%" />
 
@@ -84,6 +86,11 @@
             <p>Telefone: <font><?php echo $tel2 ?></font></p>
             <p>Instrutor Responsável : <font><?php echo $instrutor ?></font></p>
 
+            <p>Dados Contratado:</p>
+            <p>Contratado: A TOKKA – Escola de Lutas  CNPJ: 66.790.246/0001-12</p>
+            <p>Endereço: QNM 08 Conjunto B Lote 34</p>
+            <p>Telefone: (61)998693504</p>
+            <p>Instrutor responsável: Klevisson Araújo
         
             <hr width="90%" />
 
@@ -135,12 +142,12 @@
             <p class="p2" align="center">
                 _________________________________________________________</p>
             <p class="p2" align="center">ASSINATURA CONTRATANTE</p>
-            <p class="p2" align="center"><br><br>
+            <p class="p2" align="center"><br><br><br>
                 _________________________________________________________</p>
             <p class="p2" align="center">ASSINATURA CONTRATADO</p>
             <p>&nbsp;</p>
             <form>
-                <input type="button" value="IMPRIMIR" onClick="window.print()"/>
+                <input type="button" value="IMPRIMIR" onClick="window.print()"/><br>
             </form>
         </div>
     </body>

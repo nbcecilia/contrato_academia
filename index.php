@@ -99,6 +99,8 @@ Portanto, solicitamos que todos os campos sejam preenchidos com atenção.</p>
 
         <label for="logradouro">Endereço:</label>
         <input class="preencher" type="text" name="logradouro" id="logradouro"size="60" placeholder="Digite o endereço"><br>
+        <label for="endereco">Endereço:</label>
+        <input class="preencher" type="text" name="endereco" id="endereco"size="60"><br>
         <label for="cidade">Cidade:</label> 
         <input  class="preencher" type="text" id="cidade" name="cidade" placeholder="Ex:Brasília"required>
         
@@ -166,6 +168,9 @@ Observações:<br>
 
 <input  type="checkbox" id="ciente" name="ciente" required> Declaro que as informações prestadas são verdadeiras.<br><br>
 <button type="submit">Enviar</button>
+    <input  type="checkbox" id="ciente" name="ciente" required> Declaro que as informações prestadas são verdadeiras.<br><br>
+   
+    <button type="submit">Enviar</button><br>
     </form>
 
     </div>
