@@ -16,9 +16,9 @@
 
             <h3>Caros Alunos e/ou Responsáveis,</h3>
 
-<p>Bem-vindo(a) à nossa escola de lutas. Por favor, utilize este formulário para realizar sua adesão às aulas oferecidas por nossa equipe.</p>
+<p><strong>Bem-vindo(a) à nossa escola de lutas. Por favor, utilize este formulário para realizar sua adesão às aulas oferecidas por nossa equipe.</p>
 <p>Precisamos de informações completas e corretas do(a) aluno(a) para garantir um atendimento adequado, segurança durante os treinamentos e organização das turmas. 
-Portanto, solicitamos que todos os campos sejam preenchidos com atenção.</p>
+Portanto, solicitamos que todos os campos sejam preenchidos com atenção.</strong></p>
 <br><br>
         
         <form class="marg" action="cadastroconfirmado.php" method="POST" target="_blank">
@@ -29,8 +29,6 @@ Portanto, solicitamos que todos os campos sejam preenchidos com atenção.</p>
         <input class="preencher" type="text" id="contratado" name="contratado" minlength="5" maxlength="30" size= "60" required placeholder="Digite o nome da empresa" autocomplete="contratado"><br>
         <label for="cnpj">CNPJ:</label>
         <input class="preencher" type="text" id="cnpj" name="cnpj" placeholder="xx.xxx.xxx/xxxx-xx" autocomplete="cnpj" required><br>
-        <label for="logradouro2">Endereço:</label>
-        <input class="preencher" type="text" name="logradouro2" id="logradouro2"size="60" placeholder="Digite o endereço" required autocomplete="logradouro2"><br>
         <label for="cidade2" reqired autocomplete="cidade2">Cidade:</label> 
         <input  class="preencher" type="text" id="cidade2" name="cidade2" placeholder="Ex:Brasília"required>
         <label for="estado2" required autocomplete="estado2">Estado:</label> 
@@ -62,7 +60,7 @@ Portanto, solicitamos que todos os campos sejam preenchidos com atenção.</p>
                         <option value="SP">São Paulo</option>
                         <option value="SE">Sergipe</option>
                         <option value="TO">Tocantins</option>
-                    </select><br>
+        </select><br>
         <label for="itel2" required autocomplete="tel2">Telefone:</label>
         <input  class="preencher" type="tel2" name="tel2" id="itel2" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx"required><br>
         <label for="instrutor" required autocomplete="instrutor">Instrutor Responsável:</label>
@@ -97,8 +95,6 @@ Portanto, solicitamos que todos os campos sejam preenchidos com atenção.</p>
         <label for="itel">Telefone:</label>
         <input  class="preencher" type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx"required> <br>
 
-        <label for="logradouro">Endereço:</label>
-        <input class="preencher" type="text" name="logradouro" id="logradouro"size="60" placeholder="Digite o endereço"><br>
         <label for="endereco">Endereço:</label>
         <input class="preencher" type="text" name="endereco" id="endereco"size="60"><br>
         <label for="cidade">Cidade:</label> 
@@ -133,14 +129,14 @@ Portanto, solicitamos que todos os campos sejam preenchidos com atenção.</p>
                         <option value="SP">São Paulo</option>
                         <option value="SE">Sergipe</option>
                         <option value="TO">Tocantins</option>
-                    </select><br><br>
+        </select><br><br>
 
         <label>Escolha a Modalidade:</label><br>
         <input type="radio" name="luta" value="Muay Thai">Muay Thai <br>
         <input type="radio" name="luta" value="Jiu-Jítsu">Jiu-Jítsu <br> <br>
-     
+
         <label>Escolha o plano/frequência:</label><br>
-        <input class="preencher" type="radio" id="plano2x" name="plano" value="2x/sem - R$100" required>
+        <input class="preencher" type="radio" id="plano2x" name="plano" value="2x/sem R$100" required>
         <label for="plano2x">2x na semana — <strong>R$ 100,00</strong></label><br>
         <input type="radio" id="plano3x" name="plano" value="3x/sem - R$130">
         <label for="plano3x">3x na semana — <strong>R$ 130,00</strong></label><br>
@@ -152,27 +148,23 @@ Portanto, solicitamos que todos os campos sejam preenchidos com atenção.</p>
 
         <hr width="90%">
         <h3>Informações complementares:</h3>
-                Há alguma informação médica relacionada ao aluno, que você gostaria 
-                 de informar?<br>
-                <input type="radio" name="infoMedica" value="Sim">Sim
-                <input type="radio" name="infoMedica" value="Não" checked>Não
-                <input class="preencher"  type="text" size="60" placeholder="Se sim, informe aqui"><br>
-                O aluno necessita de alguma adaptação especial?<br>
-                <input type="radio" name="especial" value="Sim">Sim
-                <input type="radio" name="especial" value="Não" checked>Não
-                <input class="preencher" type="text" size="60" placeholder="Se sim, informe aqui">
+        Há alguma informação médica relacionada ao aluno, que você gostaria de informar?<br>
+        <input type="radio" name="infoMedica" value="Sim">Sim
+        <input type="radio" name="infoMedica" value="Não" checked>Não
+        <input class="preencher"  type="text" size="60" placeholder="Se sim, informe aqui"><br>
+        O aluno necessita de alguma adaptação especial?<br>
+        <input type="radio" name="especial" value="Sim">Sim
+        <input type="radio" name="especial" value="Não" checked>Não
+        <input class="preencher" type="text" size="60" placeholder="Se sim, informe aqui">
 <br><br><br>
 
 Observações:<br>
 <textarea type="text" id="obs" name="obs" value="obs" class="marg" cols="80" rows="10" placeholder="Opcional:use este espaço para informar restrições médicas, lesões, nível de experiência anterior ou seus principais objetivos com o treino."></textarea><br><br>
 
 <input  type="checkbox" id="ciente" name="ciente" required> Declaro que as informações prestadas são verdadeiras.<br><br>
-<button type="submit">Enviar</button>
-    <input  type="checkbox" id="ciente" name="ciente" required> Declaro que as informações prestadas são verdadeiras.<br><br>
-   
-    <button type="submit">Enviar</button><br>
-    </form>
 
-    </div>
+<button type="submit">Enviar</button><br>
+</form>
+</div>
 </body>
 </html>
